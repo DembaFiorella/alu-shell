@@ -1,0 +1,9 @@
+#!/bin/bash
+# Changes the owner of "hello" to vincent, only if it is owned by guillaume
+
+if [ "$(stat -c %U hello)" = "guillaume" ]; then
+    echo "hello is owned by guillaume, changing owner to vincent"
+    chown vincent hello
+else
+    echo "hello is not owned by guillaume, nothing changed"
+fi
