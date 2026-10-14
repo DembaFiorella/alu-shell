@@ -1,1 +1,1 @@
-# ALU Shell
+This repository contains shell scripting exercises.
