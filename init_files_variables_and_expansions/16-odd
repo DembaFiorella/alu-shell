@@ -1,6 +1,2 @@
 #!/bin/bash
-while read -r a
-do
-echo "$a"
-read -r
-done
+paste - - | cut -f1
